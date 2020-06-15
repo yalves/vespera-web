@@ -1,0 +1,39 @@
+html { 
+    background: url(assets/BG_SITE-1.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+header, footer{
+    display: flex;
+    background-color: rgb(231, 9, 165);
+    height: auto;
+    flex-direction: row;
+}
+
+.band-photo {
+    width: 100%;
+    height: auto;
+}
