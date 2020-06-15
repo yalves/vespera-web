@@ -10,10 +10,25 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 
-.layout{
+@font-face {
+    font-family: "Gotham light";
+    src: url("fonts/gotham-light.ttf");
+}
+
+@font-face {
+    font-family: "Gotham bold";
+    src: url("fonts/gotham-bold.otf");
+}
+
+@font-face {
+    font-family: "Gotham medium";
+    src: url("fonts/gotham-medium.ttf");
+}
+
+.container{
     display: flex;
     flex-direction: column;
     color: white;
@@ -22,13 +37,27 @@ body{
 .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-items: center;
     width: 100%;
+    align-items: center;
 }
+
+.navigation > a {
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+    font-family: "Gotham light";
+    color: white;
+    text-decoration: none;
+}
+
+/* .logo>img {
+    height: 90%;
+    width: 90%;
+} */
 
 header, footer{
     display: flex;
-    background-color: rgb(231, 9, 165);
     height: auto;
     flex-direction: row;
 }
@@ -36,4 +65,46 @@ header, footer{
 .band-photo {
     width: 100%;
     height: auto;
+}
+
+.discography {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+
+.discography > div {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.cover-picture {
+    border: 8px solid #FFFFFF;
+}
+
+.cover-information {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.cover-information > p {
+    font-family: "Gotham light";
+    text-align: center;
+}
+
+.cover-links {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    margin-top: 24px;
+}
+
+.cover-links > a {
+    flex-grow: 1;
 }
