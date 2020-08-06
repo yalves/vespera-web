@@ -32,6 +32,8 @@ body{
     display: flex;
     flex-direction: column;
     color: white;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .navigation {
@@ -49,6 +51,7 @@ body{
     font-family: "Gotham light";
     color: white;
     text-decoration: none;
+    font-size: 26px;
 }
 
 /* .logo>img {
@@ -62,8 +65,13 @@ header, footer{
     flex-direction: row;
 }
 
+header {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .band-photo {
-    width: 100%;
+    width: 100% !important;
     height: auto;
 }
 
@@ -82,7 +90,7 @@ header, footer{
     justify-content: center;
 }
 
-.cover-picture {
+.cover-picture, .player > iframe {
     border: 8px solid #FFFFFF;
 }
 
@@ -96,6 +104,7 @@ header, footer{
 .cover-information > p {
     font-family: "Gotham light";
     text-align: center;
+    font-size: 35px;
 }
 
 .cover-links {
@@ -116,4 +125,54 @@ header, footer{
   width: 100%;
   justify-items: center;
   align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  width: 100%;
+  align-items: center;
+}
+
+.contact > div {
+  font-family: "Gotham Medium";
+  color: white;
+  text-decoration: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.contact > div > img {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+
+.contact > div > p {
+  font-size: 32px;
+}
+
+.instagram-img {
+  width: 50px;
+  height: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-items: left;
+  width: 100%;
+}
+
+.presentation > p {
+  font-family: "Gotham Light";
+  font-size: 32px;
 }
