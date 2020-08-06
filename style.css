@@ -127,12 +127,23 @@ header {
   align-items: center;
 }
 
+.about {
+  font-family: "Gotham Light";
+  font-size: 25px;
+  margin-left: 5%;
+}
+
+.about-bold {
+  font-family: "Gotham Bold";
+}
+
 .contact {
   display: flex;
   flex-direction: row;
   justify-items: center;
   width: 100%;
   align-items: center;
+  margin-top: 200px;
 }
 
 .contact > div {
