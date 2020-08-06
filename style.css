@@ -108,3 +108,12 @@ header, footer{
 .cover-links > a {
     flex-grow: 1;
 }
+
+.lyrics {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
